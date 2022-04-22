@@ -10,7 +10,7 @@ electron-base是一个electron的基础开发框架，本项目主要在页面�
 ### 开发
 ```
 # 克隆项目
-git clone https://github.com/OpenWinter/electron-base.git
+git clone https://github.com/OpenWinter/electron-vue.git
 
 # 安装依赖
 npm install
