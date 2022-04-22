@@ -1,15 +1,16 @@
 {
-  "name": "electron-app",
+  "name": "electron-vue",
   "version": "1.0.0",
   "description": "",
   "main": "electron/main.js",
   "scripts": {
-    "dev": "vite",
+    "web": "vite",
+    "dev": "electron .",
     "start": "node script/start.js",
     "build": "node script/build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Mr.Li <503647515@qq.com>",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
@@ -21,20 +22,11 @@
     "@vitejs/plugin-legacy": "^1.3.1",
     "@vitejs/plugin-vue": "^1.1.4",
     "@vue/compiler-sfc": "^3.0.5",
-    "electron": "^16.2.2",
+    "electron": "^15.0.0",
     "electron-packager": "^15.4.0",
     "sass": "^1.32.8",
     "vite": "^2.0.1",
     "vite-plugin-svg-icons": "^0.3.5",
     "vite-plugin-svg-sprite": "^0.2.2"
-  },
-  "build": {
-    "appId": "electron-demo",
-    "asar": false,
-    "win": {
-    },
-    "mac": {
-      "category": "your.app.category.type"
-    }
   }
 }

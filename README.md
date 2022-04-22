@@ -1,39 +1,47 @@
-# ElectronApp
+<p align="center">
+  <img width="150" src="https://img.uouzen.cn/2022-04-19/1650370670159RNW.png">
+</p>
 
-#### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+### 简介
+electron-base是一个electron的基础开发框架，本项目主要在页面配置及打包上进行了基础的集成，
+开发者可以更便捷的开始一个electron项目，帮助你快速搭建一个基于electron的桌面应用，
+如果你还在寻找electron的开发方案，希望本项目都能帮助到你。
 
-#### 软件架构
-软件架构说明
+### 开发
+```
+# 克隆项目
+git clone https://github.com/OpenWinter/electron-base.git
 
+# 安装依赖
+npm install
 
-#### 安装教程
+# 没有外网环境的请通过设置淘宝镜像解决下载问题，安装可能会失败，请删除node_module目录后重试几次
+npm config set registry https://registry.npm.taobao.org
+# 查看是否更改成功
+npm config get registry
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+# 启动服务，启动失败多数情况是因为electron包下载失败或者下载不完全，请删除node_module目录后重新安装
+npm run dev
 
-#### 使用说明
+#开发环境打开控制台调试
+ctrl + shift + i
+```
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+### 打包发布
+#### 下载安装包
+访问如下链接，下载electron安装包，放到项目的[source]文件夹中，[下载完成后请勿重命名] <br />
+[windows64安装包下载](https://registry.npmmirror.com/-/binary/electron/15.0.0/electron-v15.0.0-win32-x64.zip) <br />
+[苹果x64安装包下载](https://registry.npmmirror.com/-/binary/electron/15.0.0/electron-v15.0.0-darwin-x64.zip) <br />
+[苹果arm64安装包下载](https://registry.npmmirror.com/-/binary/electron/15.0.0/electron-v15.0.0-darwin-arm64.zip) <br />
 
-#### 参与贡献
+[镜像地址](https://registry.npmmirror.com/binary.html?path=electron/15.0.0/)
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+#### 打包命令
+```
+npm run build
+```
 
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+### 预览
+<p>
+<img width="900px" src="https://img.uouzen.cn/2022-04-19/1650370897519HDw.jpg" />
+</p>

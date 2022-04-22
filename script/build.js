@@ -7,13 +7,14 @@ const {out, platform, arch, source, icon, ignore, version} = require('../build.c
 
 async function check(){
   //检查安装包
-  const dir = opendirSync(join(__dirname,source))
+  const dir = opendirSync(join(__dirname,'../',source))
   for await (const dirent of dir) {
     if(/^electron-v.*.zip$/.test(dirent.name)){
       //找到安装包目录
       return true
     }
   }
+  return false
 }
 
 async function build() {
@@ -31,6 +32,7 @@ async function build() {
     `--platform=${platform}`,
     `--arch=${arch}`,
     '--overwrite',
+    `--electron-version ${version}`,
     `--electron-zip-dir=${join(source)}`,
     `--icon=${join(icon)}`,
     ..._ignore

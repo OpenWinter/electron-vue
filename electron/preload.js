@@ -1,4 +1,4 @@
-const path = require('path')
-window.addEventListener('DOMContentLoaded', () => {
 
+window.addEventListener('DOMContentLoaded', () => {
+  require('./utils/api')(['openWindow','$confirm','$message','$loading','$dialog'])
 })

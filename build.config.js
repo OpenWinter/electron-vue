@@ -5,6 +5,6 @@ module.exports = {
   version: '15.0.0',
   arch: 'x64',
   source: 'source',//安装包存放目录
-  icon: 'public/favicon.ico',
+  icon: 'static/favicon.ico',
   ignore: ['src', 'source', '\.vscode', '\.idea', 'node_modules']
 }

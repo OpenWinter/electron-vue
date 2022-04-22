@@ -24,13 +24,12 @@ export default ({ command, mode }) => {
       rollupOptions: {
         input: {
           main: resolve(__dirname, 'index.html'),
-          message: resolve(__dirname, 'message/index.html')
         }
       }
     },
     server: {
-      port: 9527,
-      open: true,
+      port: 7000,
+      open: false,
       /*proxy: {
         "/api": {
           target: "http://devops.copote.com/dev",

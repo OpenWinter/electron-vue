@@ -1,14 +1,12 @@
 const {exec} = require('child_process')
 
-function callback(data) {
-  console.log(data)
-}
+const log = console.log
 
 const viteProcess = exec('vite')
 
-viteProcess.stdout.on('data', callback)
-viteProcess.stderr.on('data', callback)
+viteProcess.stdout.on('data', log)
+viteProcess.stderr.on('data', log)
 
-const electronProcess = exec('set NODE_ENV=development&& electron .')
-electronProcess.stdout.on('data', callback)
-electronProcess.stderr.on('data', callback)
+const electronProcess = exec('electron .')
+electronProcess.stdout.on('data', log)
+electronProcess.stderr.on('data', log)
